@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class gender(Enum):
     FEMALE = "Жіноча"
     MALE = "Чоловіча"
@@ -109,7 +108,6 @@ class Party:
         for guest in self.__guests:
             guest.print_info()
         print("-" * 95)
-
 
 def findAverageAge(guests: list[Guest], target_gender: gender):
     ages = [g.get_age() for g in guests if g.get_gender() == target_gender]
